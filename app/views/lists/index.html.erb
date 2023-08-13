@@ -4,7 +4,7 @@
 
   <p>タイトル</p>
   <span>
-    <%= link_to list.title, list_path(list.id) %>
+    <%=link_to list.title, list_path(list.id) %>
   </span>
 
 
@@ -12,7 +12,7 @@
   <% if list.image.attached? %>
     <%= image_tag list.image, size: "200x200" %>
   <% else %>
-    <%= image_tag '/assets/no_image.jpg', size: "200x200" %>
+    <%= image_tag 'no_image', size: "200x200" %>
   <% end %>
 
-<% end %> 
+<% end %>
